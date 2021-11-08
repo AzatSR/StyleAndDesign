@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StyleWithDesignApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+
+<!--primary style for buttons -->
+    <style name="CustomButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+ <!--personal style for button "Facebook" -->
+    <style name="CustomButtonForFacebook" parent="CustomButtonStyle">
+        <item name="backgroundTint">#6290EF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">55sp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+<!-- style inheritance-->
+    <style name="CustomButtonStyle.Strong" parent="CustomButtonStyle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="backgroundTint">#00BCD4</item>
+    </style>
+
+<!--create style for textview-->
+    <style name="Text_View_Design" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+
+
+</resources>
